@@ -5,8 +5,7 @@ const PORT = 3000 || process.env.PORT;
 
 // setting view engine to ejs
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'));
-app.use(express.static('public/assets'));
+app.use(express.static(__dirname + '/public'));
 
 // index page
 app.get('/', (req, res) => {
