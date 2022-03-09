@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 
 // index page
 app.get('/', (req, res) => {
-    res.render('pages/index.ejs')
+    res.render('index')
 });
 
 // listening to application at http://localhost:3000/
