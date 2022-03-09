@@ -14,5 +14,5 @@ app.get('/', (req, res) => {
 
 // listening to application at http://localhost:3000/
 app.listen(PORT, () => {
-    console.log(`App running at port: ${PORT}`);
+    console.log(`Hackathon Template listening at port: ${PORT}`);
 });
