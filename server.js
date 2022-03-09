@@ -1,9 +1,12 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const PORT = 3000 || process.env.PORT;
 
 // setting view engine to ejs
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '/views'));
+app.use(express.static('public/assets'));
 
 // index page
 app.get('/', (req, res) => {
