@@ -1,6 +1,6 @@
 # Hackathon Template
-CloudSystems hackathon template  built with Node.js, Express.js, and EJS
-This template is free to use for personal and commercial use under the MIT License
+CloudSystems hackathon template  built with Node.js, Express.js, and EJS.  
+This template is free to use for personal and commercial use under the GNU GENERAL PUBLIC LICENSE
 
 ## Project Tree
 ```
@@ -51,5 +51,5 @@ Hackathon Template listening at port: 3000
 ### 5. Accessing the Application
 Now that you have started running the server on port 3000, you can access this port by going to your web browser and typing http://localhost:3000/.
 
-The application should now be functional and running. 
+The application should now be functional and running.  
 You can now edit this application for your own projects. 
