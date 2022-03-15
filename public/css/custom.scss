@@ -8,10 +8,10 @@ $sizes: ();
 @import "../../node_modules/bootstrap/scss/_mixins.scss";
 */
 
-// common variable changes
+// variables
 $spacer: 1rem;
-$primary: #000;
 
+// application wide styling
 $body-bg: #212529;
 $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
