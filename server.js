@@ -17,9 +17,9 @@ app.get("/", async (req, res) => {
 });
 
 // page
-app.get("/page", async (req, res) => {
+app.get("/data-display", async (req, res) => {
   const users = await User.find({})
-  res.render("page", {users})
+  res.render("data_display", {users})
 });
 
 // Connecting to MongoDB
