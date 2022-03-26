@@ -46,6 +46,11 @@ app.post("/updateUser", async (req, res) => {
   res.status(200).json(user);
 });
 
+app.delete("/deleteUser", async (req, res) => {
+  // delete user given id
+  // error handling for invalid indexes
+});
+
 // Connecting to MongoDB
 mongoose.connection.on("connecting", () => {
   console.log(`Connecting to Mongo at ${MONGO_URI}`);
