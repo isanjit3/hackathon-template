@@ -3,7 +3,7 @@ const path = require("path");
 const app = express();
 const PORT = 3000 || process.env.PORT;
 const mongoose = require("mongoose");
-const MONGO_URI = "mongodb://localhost:27017/hackathon_template";
+const MONGO_URI = "mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
 const User = require('./models/user');
 const bodyParser = require('body-parser');
 
@@ -61,7 +61,7 @@ mongoose.connection.on("connected", () => {
 });
 
 mongoose.connection.on("error", (error) => {
-  console.log.error("Mongo connection error", error);
+  console.log("Mongo connection error", error);
 });
 
 try {
