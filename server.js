@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // index page
 app.get("/", async (req, res) => {
-  //await addUser();
+  //await addUser(); // Create new user on page render
   res.render("index");
 });
 
@@ -27,6 +27,7 @@ app.get("/data-display", async (req, res) => {
   res.render("data_display", {users})
 });
 
+// add new user to database
 app.post("/addUser", async (req, res) => {
   const user = new User(req.body);
 
@@ -35,6 +36,7 @@ app.post("/addUser", async (req, res) => {
   res.status(200).json(createdUser);
 });
 
+// update existing user in database
 app.post("/updateUser", async (req, res) => {
 
   const user = await user.findByIdAndUpdate(req.params.id, req.body, {
@@ -66,6 +68,8 @@ try {
   console.log(`Mongo connection error: ${error}`);
 }
 
+// default user params
+// used in app.get("/")
 async function addUser() {
     const user = new User(
         {
